@@ -18,7 +18,7 @@ export default class SupplierList extends LightningElement {
     /* To get the selected Account Billing city */
     @wire(getRecord, { recordId: '$recordId', fields: [ACCOUNT_BillingCity_FIELD] })
     Account;
-
+    
     /* Method to get the supplier list */
     getSupplierList(event) {
         if (this.recordId != null) {

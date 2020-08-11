@@ -60,7 +60,6 @@ public class CaseTriggerHandlerTest {
             update c2;
             List<Account> acnt2 = [Select id,Case_Avg_Rating__c from Account where Name='Test Account'];
             System.assertEquals(acnt2[0].Case_Avg_Rating__c, 4, 'Assertion is wrong');
-            
         }
     }
 }
